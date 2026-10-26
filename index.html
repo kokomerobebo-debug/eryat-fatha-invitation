@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6ead7" />
+  <meta name="description" content="Join us for the Eryat Fatha celebration of Abdelrahman & Hana — December 26, 2026." />
+  <title>Abdelrahman & Hana | Eryat Fatha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <audio id="invitationMusic" src="assets/invitation-music.mp3" preload="auto" loop></audio>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="flower-border flower-left" aria-hidden="true"></div>
+  <div class="flower-border flower-right" aria-hidden="true"></div>
+
+  <div class="floating-car-track" aria-hidden="true">
+    <img src="assets/side-car.png" alt="" class="floating-car" id="floatingCar" />
+  </div>
+
+  <header class="site-header" id="home">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">HOME</a>
+      <a href="#invitation">INVITATION</a>
+      <a href="#details">DETAILS</a>
+      <a href="#countdown">COUNTDOWN</a>
+    </nav>
+    <div class="divider ornament"><span>✥</span></div>
+  </header>
+
+  <main>
+    <section id="invitation" class="invitation-section" aria-label="Invitation">
+      <div class="eyebrow animate-in">A CELEBRATION OF LOVE</div>
+      <h1 class="hero-title animate-in">Eryat Fatha</h1>
+      <p class="hero-subtitle animate-in">Click the envelope to reveal our invitation</p>
+
+      <div class="envelope-scene animate-in" id="envelopeScene">
+        <img src="assets/heart-card-custom.png" class="invite-card" id="inviteCard" alt="Heart-shaped lace card: Eryat Fatha, Abdelrahman and Hana, Kingsville Uptown Cairo, 26 December 2026" />
+        <button class="envelope-button" id="envelopeButton" aria-expanded="false" aria-controls="inviteCard" aria-label="Open the invitation envelope to reveal the heart card">
+          <img src="assets/envelope-custom.png" class="envelope-image" alt="Elegant invitation envelope" />
+        </button>
+      </div>
+
+      <p class="tap-note animate-in" id="tapNote">Tap the envelope to open your invitation ✧</p>
+    </section>
+
+    <section class="story-section animate-in" aria-label="Story introduction">
+      <div class="story-card">
+        <div class="eyebrow">OUR STORY</div>
+        <h2>One page, one celebration, one beautiful beginning.</h2>
+        <p>
+          A soft floral invitation website where every detail unfolds gently — from the first envelope opening
+          to the final countdown to your special day.
+        </p>
+      </div>
+    </section>
+
+    <section id="details" class="details-section animate-in">
+      <div class="eyebrow">SAVE THE DATE</div>
+      <div class="divider ornament"><span>✥</span></div>
+      <h2 class="details-title">Together with our families</h2>
+      <p class="details-subtitle">We joyfully invite you to celebrate our Eryat Fatha</p>
+
+      <div class="details-grid">
+        <div class="detail">
+          <div class="detail-icon">♧</div>
+          <div class="detail-title">THE OCCASION</div>
+          <div class="detail-large">Eryat Fatha</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">▦</div>
+          <div class="detail-title">SATURDAY</div>
+          <div class="detail-large">26</div>
+          <div class="detail-secondary">DECEMBER 2026</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">♧</div>
+          <div class="detail-title">THE VENUE</div>
+          <div class="detail-large venue-name">Kingsville</div>
+          <div class="detail-secondary">UPTOWN CAIRO</div>
+        </div>
+      </div>
+
+      <a class="venue-link" href="https://www.google.com/maps/search/?api=1&query=Kingsville+Uptown+Cairo" target="_blank" rel="noopener noreferrer">VIEW LOCATION <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="countdown" class="countdown-section animate-in">
+      <div class="eyebrow">THE COUNTDOWN BEGINS</div>
+      <div class="divider ornament"><span>✥</span></div>
+      <div class="countdown-grid" role="timer" aria-label="Time remaining until December 26, 2026">
+        <div class="counter"><span id="days">00</span><label>DAYS</label></div>
+        <div class="counter"><span id="hours">00</span><label>HOURS</label></div>
+        <div class="counter"><span id="minutes">00</span><label>MINUTES</label></div>
+        <div class="counter"><span id="seconds">00</span><label>SECONDS</label></div>
+      </div>
+      <p id="countdownFinished" class="finished-message" hidden>Today is the day! ♥</p>
+      <div class="event-row">
+        <div class="event-box"><strong>Saturday</strong><span>26 December 2026</span></div>
+        <div class="event-box"><strong>Venue</strong><span>Kingsville Uptown Cairo</span></div>
+        <div class="event-box"><strong>Couple</strong><span>Abdelrahman &amp; Hana</span></div>
+      </div>
+      <div class="divider ornament"><span>✥</span></div>
+      <h2 class="closing">We can’t wait<br>to celebrate with you!</h2>
+      <p class="signature">ABDELRAHMAN &amp; HANA</p>
+    </section>
+  </main>
+
+  <footer>MADE WITH LOVE <span>✧</span> 26.12.2026</footer>
+</body>
+</html>
